@@ -1,0 +1,148 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f7fc;
+    color: #17365d;
+}
+
+header {
+    background: #07549b;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 21px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #bfe7ff;
+}
+
+.hero {
+    padding: 70px 8%;
+    background: linear-gradient(120deg, #07549b, #2b9bd7);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 38px;
+    max-width: 600px;
+}
+
+.hero p {
+    line-height: 1.7;
+    max-width: 550px;
+}
+
+.button {
+    display: inline-block;
+    margin: 12px 8px 0 0;
+    padding: 12px 20px;
+    background: #ffffff;
+    color: #07549b;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.button.secondary {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 35px 5%;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #dce7f2;
+}
+
+.card h3 {
+    color: #07549b;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+footer {
+    background: #073c70;
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 420px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+form input,
+form select {
+    padding: 12px;
+    border: 1px solid #cbd8e6;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
